@@ -1,0 +1,40 @@
+     {% extends "dashboard/dashboard.html" %}
+     {% block title %}Manager DashBoard {% endblock title %}
+     
+{% block heading %}Manager Dashboard{% endblock heading %}
+     {% block tasks %}
+     <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-xl p-6 shadow-sm lg:col-span-1">
+                <h2 class="text-lg font-semibold mb-4">Today's Tasks</h2>
+
+                <ul class="space-y-4">
+
+                    <li class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span>Complete project proposal</span>
+                        </div>
+                        <span class="text-sm text-gray-500">High</span>
+                    </li>
+
+                    <li class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                            <span>Review team updates</span>
+                        </div>
+                        <span class="text-sm text-gray-500">Normal</span>
+                    </li>
+
+                    <li class="flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>Prepare for client meeting</span>
+                        </div>
+                        <span class="text-sm text-gray-500">Low</span>
+                    </li>
+
+                </ul>
+            </div>
+        
+    </section>
+{% endblock tasks %}
